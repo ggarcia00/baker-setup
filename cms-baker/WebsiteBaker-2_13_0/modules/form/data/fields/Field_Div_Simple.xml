@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <section_id>11</section_id>
+  <page_id>11</page_id>
+  <layout>Field_Div_Simple</layout>
+  <description>Description of the field-form…</description>
+  <fields>
+    <field id="556">
+      <position>1</position>
+      <title>Ihre Nachricht</title>
+      <type>heading</type>
+      <required>0</required>
+      <value/>
+      <extra>&lt;div class="w3-padding-0 w3-topbar w3-bottombar w3-large"&gt;{TITLE}{FIELD}&lt;/div&gt;</extra>
+      <active>1</active>
+    </field>
+    <field id="557">
+      <position>2</position>
+      <title>Name</title>
+      <type>textfield</type>
+      <required>0</required>
+      <value/>
+      <extra/>
+      <active>1</active>
+    </field>
+    <field id="558">
+      <position>3</position>
+      <title>Vorname</title>
+      <type>textfield</type>
+      <required>0</required>
+      <value/>
+      <extra>0</extra>
+      <active>1</active>
+    </field>
+    <field id="559">
+      <position>4</position>
+      <title>Telefon</title>
+      <type>textfield</type>
+      <required>0</required>
+      <value/>
+      <extra/>
+      <active>1</active>
+    </field>
+    <field id="560">
+      <position>5</position>
+      <title>E-Mail Adresse</title>
+      <type>email</type>
+      <required>1</required>
+      <value/>
+      <extra/>
+      <active>1</active>
+    </field>
+    <field id="561">
+      <position>6</position>
+      <title>Ihre Nachricht  an uns!</title>
+      <type>textarea</type>
+      <required>1</required>
+      <value/>
+      <extra/>
+      <active>1</active>
+    </field>
+    <field id="562">
+      <position>7</position>
+      <title>Auswahlliste, eine Mehrfachauswahl ist möglich</title>
+      <type>heading</type>
+      <required>0</required>
+      <value/>
+      <extra>{TITLE}{FIELD}</extra>
+      <active>1</active>
+    </field>
+    <field id="563">
+      <position>8</position>
+      <title>Auswahlliste</title>
+      <type>select</type>
+      <required>1</required>
+      <value>Auswahl 1,Auswahl 2,Auswahl 3,0</value>
+      <extra>4,multiple</extra>
+      <active>1</active>
+    </field>
+    <field id="564">
+      <position>9</position>
+      <title>Kategorien</title>
+      <type>heading</type>
+      <required>0</required>
+      <value/>
+      <extra>{TITLE}{FIELD}</extra>
+      <active>1</active>
+    </field>
+    <field id="565">
+      <position>10</position>
+      <title>Kontrollkästchen</title>
+      <type>checkbox</type>
+      <required>0</required>
+      <value>Spanien Reise, Karibik Katalog, Urlaub auf Mallorca</value>
+      <extra> </extra>
+      <active>1</active>
+    </field>
+    <field id="566">
+      <position>11</position>
+      <title>Anfordern einer Info Broschüre</title>
+      <type>heading</type>
+      <required>0</required>
+      <value/>
+      <extra>{TITLE}{FIELD}</extra>
+      <active>1</active>
+    </field>
+    <field id="567">
+      <position>12</position>
+      <title>Optionsfeld</title>
+      <type>radio</type>
+      <required>0</required>
+      <value>Option 1,Option 2,Option 3</value>
+      <extra> </extra>
+      <active>1</active>
+    </field>
+  </fields>
+</root>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <section_id>11</section_id>
+  <page_id>11</page_id>
+  <layout>Vorlage_alle_Moeglichkeiten</layout>
+  <description>Description of the form…</description>
+  <fields>
+    <field id="192">
+      <position>1</position>
+      <title>Ihre Nachricht</title>
+      <type>heading</type>
+      <required>0</required>
+      <value/>
+      <extra>&lt;div class="w3-padding-0 w3-topbar w3-bottombar w3-large"&gt;{TITLE}{FIELD}&lt;/div&gt;</extra>
+      <active>1</active>
+    </field>
+    <field id="193">
+      <position>2</position>
+      <title>Name</title>
+      <type>textfield</type>
+      <required>0</required>
+      <value/>
+      <extra/>
+      <active>1</active>
+    </field>
+    <field id="194">
+      <position>3</position>
+      <title>Vorname</title>
+      <type>textfield</type>
+      <required>0</required>
+      <value/>
+      <extra>0</extra>
+      <active>1</active>
+    </field>
+    <field id="195">
+      <position>4</position>
+      <title>Telefon</title>
+      <type>textfield</type>
+      <required>0</required>
+      <value/>
+      <extra/>
+      <active>1</active>
+    </field>
+    <field id="196">
+      <position>5</position>
+      <title>E-Mail Adresse</title>
+      <type>email</type>
+      <required>1</required>
+      <value/>
+      <extra/>
+      <active>1</active>
+    </field>
+    <field id="197">
+      <position>6</position>
+      <title>Ihre Nachricht  an uns!</title>
+      <type>textarea</type>
+      <required>0</required>
+      <value/>
+      <extra/>
+      <active>1</active>
+    </field>
+    <field id="198">
+      <position>7</position>
+      <title>Wählen Sie aus der Auswahlliste, eine mehrfachauswahl ist möglich</title>
+      <type>select</type>
+      <required>1</required>
+      <value>Auswahl 1,Auswahl 2,Auswahl 3,Auswahl 4,Auswahl 5,Auswahl 6,Auswahl 7</value>
+      <extra>4,multiple</extra>
+      <active>1</active>
+    </field>
+    <field id="199">
+      <position>8</position>
+      <title>Kontrollkästchen</title>
+      <type>checkbox</type>
+      <required>0</required>
+      <value>a,b,c</value>
+      <extra> </extra>
+      <active>1</active>
+    </field>
+    <field id="200">
+      <position>9</position>
+      <title>Optionsfeld</title>
+      <type>radio</type>
+      <required>0</required>
+      <value>1,2,3</value>
+      <extra> </extra>
+      <active>1</active>
+    </field>
+  </fields>
+</root>

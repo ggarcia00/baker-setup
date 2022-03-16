@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <section_id>11</section_id>
+  <page_id>11</page_id>
+  <layout>DE_FieldDivSubjext</layout>
+  <description>Description of the form…</description>
+  <fields>
+    <field id="338">
+      <position>1</position>
+      <title>Ihre Nachricht</title>
+      <type>heading</type>
+      <required>0</required>
+      <value/>
+      <extra>&lt;div class="w3-padding-0 w3-topbar w3-bottombar w3-large"&gt;{TITLE}{FIELD}&lt;/div&gt;</extra>
+      <active>1</active>
+    </field>
+    <field id="338">
+      <position>1</position>
+      <title>Ihre Nachricht</title>
+      <type>heading</type>
+      <required>0</required>
+      <value/>
+      <extra>&lt;div class="w3-padding-0 w3-topbar w3-bottombar w3-large"&gt;{TITLE}{FIELD}&lt;/div&gt;</extra>
+      <active>1</active>
+    </field>
+    <field id="338">
+      <position>1</position>
+      <title>Ihre Nachricht</title>
+      <type>heading</type>
+      <required>0</required>
+      <value/>
+      <extra>&lt;div class="w3-padding-0 w3-topbar w3-bottombar w3-large"&gt;{TITLE}{FIELD}&lt;/div&gt;</extra>
+      <active>1</active>
+    </field>
+    <field id="338">
+      <position>1</position>
+      <title>Ihre Nachricht</title>
+      <type>heading</type>
+      <required>0</required>
+      <value/>
+      <extra>&lt;div class="w3-padding-0 w3-topbar w3-bottombar w3-large"&gt;{TITLE}{FIELD}&lt;/div&gt;</extra>
+      <active>1</active>
+    </field>
+    <field id="338">
+      <position>1</position>
+      <title>Ihre Nachricht</title>
+      <type>heading</type>
+      <required>0</required>
+      <value/>
+      <extra>&lt;div class="w3-padding-0 w3-topbar w3-bottombar w3-large"&gt;{TITLE}{FIELD}&lt;/div&gt;</extra>
+      <active>1</active>
+    </field>
+    <field id="338">
+      <position>1</position>
+      <title>Ihre Nachricht</title>
+      <type>heading</type>
+      <required>0</required>
+      <value/>
+      <extra>&lt;div class="w3-padding-0 w3-topbar w3-bottombar w3-large"&gt;{TITLE}{FIELD}&lt;/div&gt;</extra>
+      <active>1</active>
+    </field>
+    <field id="338">
+      <position>1</position>
+      <title>Ihre Nachricht</title>
+      <type>heading</type>
+      <required>0</required>
+      <value/>
+      <extra>&lt;div class="w3-padding-0 w3-topbar w3-bottombar w3-large"&gt;{TITLE}{FIELD}&lt;/div&gt;</extra>
+      <active>1</active>
+    </field>
+    <field id="338">
+      <position>1</position>
+      <title>Ihre Nachricht</title>
+      <type>heading</type>
+      <required>0</required>
+      <value/>
+      <extra>&lt;div class="w3-padding-0 w3-topbar w3-bottombar w3-large"&gt;{TITLE}{FIELD}&lt;/div&gt;</extra>
+      <active>1</active>
+    </field>
+    <field id="338">
+      <position>1</position>
+      <title>Ihre Nachricht</title>
+      <type>heading</type>
+      <required>0</required>
+      <value/>
+      <extra>&lt;div class="w3-padding-0 w3-topbar w3-bottombar w3-large"&gt;{TITLE}{FIELD}&lt;/div&gt;</extra>
+      <active>1</active>
+    </field>
+    <field id="338">
+      <position>1</position>
+      <title>Ihre Nachricht</title>
+      <type>heading</type>
+      <required>0</required>
+      <value/>
+      <extra>&lt;div class="w3-padding-0 w3-topbar w3-bottombar w3-large"&gt;{TITLE}{FIELD}&lt;/div&gt;</extra>
+      <active>1</active>
+    </field>
+    <field id="338">
+      <position>1</position>
+      <title>Ihre Nachricht</title>
+      <type>heading</type>
+      <required>0</required>
+      <value/>
+      <extra>&lt;div class="w3-padding-0 w3-topbar w3-bottombar w3-large"&gt;{TITLE}{FIELD}&lt;/div&gt;</extra>
+      <active>1</active>
+    </field>
+  </fields>
+</root>
