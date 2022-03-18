@@ -1,0 +1,31 @@
+
+/*
+ * Copyright (C) 2017 Manuela v.d.Decken
+ *
+ * DO NOT ALTER OR REMOVE COPYRIGHT OR THIS HEADER
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, version 2 of the License.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License 2 for more details.
+ *
+ * You should have received a copy of the GNU General Public License 2
+ * along with this program.
+ */
+/**
+ * Description of version.php
+ *
+ * @package      Core
+ * @copyright    Manuela v.d.Decken
+ * @author       Manuela v.d.Decken
+ * @license      GNU General Public License 2.0
+ * @version      2.0.1
+ * @revision     $Id: version.php 379 2019-07-03 12:13:47Z Luisehahne $
+ * @since        File available since 04.10.2017
+ * @deprecated   no / since 0000/00/00
+ * @description  simply stares the version number of installed files
+ */
