@@ -1,50 +1,41 @@
-import docker
 import pathlib
 import os
 import shutil
 import hashlib
+import argparse
+
 dir = pathlib.Path().resolve()
 
-docker_cli = docker.from_env()
-# print(dir)
 
-try:
-    docker_cli.networks.get('baker-installer')
-except:
-    docker_cli.networks.create('baker-installer')
+parser = argparse.ArgumentParser()
 
-docker_cli.containers.run('baker-installer' , detach=True, name="baker-installer", 
-                        network='baker-installer',
-                        volumes={os.path.join(dir, "workdir") : {'bind' : '/var/www/html' , 'mode' : 'rw'}},
-                        ports={'80/tcp' : 8080})
-shutil.copytree(os.path.join(dir, "cms-baker/2_13_0/"), os.path.join(dir, "workdir"), dirs_exist_ok=True)
-os.system("chown -R 33.33 workdir/")
-docker_cli.containers.get("baker-installer").exec_run("docker-php-ext-install mysqli")
+# Configs relative to website
+parser.add_argument("--slug", type=str)
+parser.add_argument("--website-title", type=str)
+parser.add_argument("--server-email", type=str)
 
+# Configs relative to admin user
+parser.add_argument("--user-email", type=str)
+parser.add_argument("--user-login", type=str)
+parser.add_argument("--user-password", type=str)
 
+args = parser.parse_args()
 
-website_title = 'Site do bom'
-server_email = 'email@email.com'
+website_title = args.website_title
+server_email = args.server_email
 
-login_name = 'administrador'
-user_email = 'email@email.com' 
-password = '123'
-passmd5 = hashlib.md5(password.encode()).hexdigest()
-
-os.system("\cp -f dump/db_template.sql db-seed/fresh_install.sql")
-os.system("sed -i \'s/website_title_template/{}/\' db-seed/fresh_install.sql".format(website_title))
-os.system("sed -i \'s/email@template.com/{}/\' db-seed/fresh_install.sql".format(server_email))
-os.system("sed -i \'s/login_name_template/{}/\' db-seed/fresh_install.sql".format(login_name))
-os.system("sed -i \'s/password_template/{}/\' db-seed/fresh_install.sql".format(passmd5))
-os.system("sed -i \'s/user_email_template/{}/\' db-seed/fresh_install.sql".format(user_email))
+user_email = args.user_email 
+user_login = args.user_login
+user_password = args.user_password
 
 
+shutil.copytree(os.path.join(dir, "cms-baker/2_13_0/"), os.path.join(dir, "output", args.slug), dirs_exist_ok=True)
 
-docker_cli.containers.run('mysql', detach=True, name='mysql-db',
-                        network='baker-installer',
-                        volumes={os.path.join(dir, "mysql-vol") : {'bind' : '/var/lib/mysql' , 'mode' : 'rw'},
-                                 os.path.join(dir, "db-seed") : {'bind' : '/docker-entrypoint-initdb.d', 'mode' : 'rw'}},
-                        hostname='db',
-                        environment=["MYSQL_ROOT_PASSWORD=passwd", "MYSQL_DATABASE=baker", "MYSQL_USER=baker", "MYSQL_PASSWORD=baker"]                  
-)
+passmd5 = hashlib.md5(user_password.encode()).hexdigest()
 
+os.system("\cp -f dump/db_template.sql output/sql_data/{}.sql".format(args.slug))
+os.system("sed -i \'s/website_title_template/{}/\' output/sql_data/{}.sql".format(website_title, args.slug))
+os.system("sed -i \'s/email@template.com/{}/\' output/sql_data/{}.sql".format(server_email, args.slug))
+os.system("sed -i \'s/login_name_template/{}/\' output/sql_data/{}.sql".format(user_login, args.slug))
+os.system("sed -i \'s/password_template/{}/\' output/sql_data/{}.sql".format(passmd5, args.slug))
+os.system("sed -i \'s/user_email_template/{}/\' output/sql_data/{}.sql".format(user_email, args.slug))

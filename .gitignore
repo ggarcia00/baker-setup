@@ -48,4 +48,8 @@ pip-selfcheck.json
 
 
 workdir/*
+output/*
+!output/sql_data
+image/
 mysql-vol
+*.ignore
